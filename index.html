@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Atlas Eléctrico de México: recursos, generación, transmisión, distribución y contexto energético.">
+<meta name="theme-color" content="#f47721"><title>Atlas Eléctrico de México | SolarPro</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<header class="topbar"><div class="container head">
+<a class="brand" href="#inicio"><span class="brand-mark">☀</span><span><b>SolarPro</b><small>ENERGÍA QUE CONECTA</small></span></a>
+<button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="nav">☰</button>
+<nav id="nav" class="nav"><a href="#inicio">Inicio</a><a href="#m0">Módulo 0</a><a href="#m1">Módulo 1</a><a href="#m2">Módulo 2</a><a href="#m3">Módulo 3</a><a href="#m4">Módulo 4</a></nav>
+</div></header>
+<main id="contenido">
+<section class="hero" id="inicio"><div class="container hero-grid">
+<div><span class="eyebrow">✦ EXPLORA EL SISTEMA ELÉCTRICO NACIONAL</span><h1>Atlas Eléctrico<br><em>de México</em></h1><h2>De los recursos energéticos al consumidor.</h2>
+<p>Un recorrido interactivo para comprender de dónde viene la electricidad, cómo se genera, cómo se transporta y cómo llega a los usuarios.</p>
+<div class="actions"><a class="btn primary" href="#m0">Comenzar recorrido →</a><a class="btn ghost" href="#m4">Descubrir hallazgos</a></div>
+<p class="micro">Proyecto académico · Información identificada por fuente, año y alcance.</p></div>
+<div class="hero-graphic"><div class="sun"></div><div class="orbit"></div><div class="panel-grid"><i></i><i></i><i></i><i></i><i></i><i></i></div><span class="float-tag">ENERGÍA SOLAR</span><span class="float-tag second">RED ELÉCTRICA</span></div>
+</div><div class="container hero-foot"><span>CONOCE</span><b></b><span>COMPRENDE</span><b></b><span>CONECTA</span></div></section>
+
+<section class="section intro"><div class="container two-col"><div><span class="kicker">EL VIAJE DE LA ELECTRICIDAD</span><h2>De un recurso natural<br>a la energía que usamos.</h2></div><p>La electricidad es una forma de energía secundaria: se obtiene al transformar recursos primarios mediante distintas tecnologías. Después, redes de transmisión y distribución permiten entregarla en los centros de consumo.</p></div>
+<div class="container flow"><div><small>01</small><strong>Recursos</strong><span>Sol, viento, agua, combustibles</span></div><b>→</b><div><small>02</small><strong>Generación</strong><span>Conversión a electricidad</span></div><b>→</b><div><small>03</small><strong>Transmisión</strong><span>Transporte en alta tensión</span></div><b>→</b><div><small>04</small><strong>Distribución</strong><span>Entrega a usuarios</span></div></div></section>
+
+<section class="section module-section" id="m0"><div class="container">
+<div class="module-head"><div><span class="kicker">MÓDULO 0</span><h2>Recursos energéticos</h2></div><p>Identifica el recurso primario, el combustible, la conversión y la tecnología. Después pon a prueba lo aprendido.</p></div>
+<div class="tabs" role="tablist"><button class="tab active" data-tab="clasifica">Clasificador</button><button class="tab" data-tab="conversion">Conversión</button><button class="tab" data-tab="matriz">Matriz energética</button><button class="tab" data-tab="compara">Comparador</button><button class="tab" data-tab="reflexiona">Reflexión</button></div>
+<div class="tab-panel active" id="tab-clasifica">
+<div class="subhead"><div><h3>1. Clasificador interactivo</h3><p>Selecciona una categoría para cada tarjeta. Hay 15 recursos, combustibles y tecnologías.</p></div><span class="counter" id="score">0 / 15 clasificadas</span></div>
+<div id="classification" class="classification"></div><div class="quiz-actions"><button class="btn primary" id="checkClass">Revisar respuestas</button><button class="btn ghost" id="resetClass">Reiniciar</button><p id="classFeedback" aria-live="polite"></p></div>
+<div class="note">Importante: la clasificación se refiere al <b>recurso o combustible</b>, no necesariamente a la tecnología. Por ejemplo, una turbina de gas puede utilizar gas natural o diésel; por eso se clasifica según el combustible indicado.</div>
+</div>
+<div class="tab-panel" id="tab-conversion">
+<div class="subhead"><div><h3>2. Diagramas de conversión</h3><p>Elige una cadena y selecciona una etapa para consultar qué sucede.</p></div></div>
+<div class="conversion-layout"><div id="conversionChoices" class="choice-list"></div><div class="conversion-view"><div id="conversionTitle" class="conversion-title"></div><div id="conversionSteps" class="conversion-steps"></div><div id="conversionExplain" class="explain-box" aria-live="polite">Selecciona una etapa del proceso.</div></div></div>
+<div class="energy-gallery" aria-label="Tecnologías de generación eléctrica"><figure><img src="assets/solar.webp" alt="Campo de paneles solares en un paisaje desértico"><figcaption><b>Solar fotovoltaica</b><span>La radiación se convierte en electricidad.</span></figcaption></figure><figure><img src="assets/eolica.webp" alt="Aerogeneradores en una costa"><figcaption><b>Energía eólica</b><span>El viento mueve las turbinas.</span></figcaption></figure><figure><img src="assets/hidroelectrica.webp" alt="Central hidroeléctrica y líneas de transmisión"><figcaption><b>Energía hidroeléctrica</b><span>El agua acciona turbinas y generadores.</span></figcaption></figure></div>
+</div>
+<div class="tab-panel" id="tab-matriz">
+<div class="subhead"><div><h3>3. Matriz energética de México</h3><p>Composición de la generación nacional y evolución de la generación de CFE.</p></div></div>
+<div class="stats-grid"><article class="stat"><small>Generación nacional 2022</small><strong>340,713 <i>GWh</i></strong><span>PRODESEN, figura 4.9</span></article><article class="stat"><small>Fuentes fósiles 2022</small><strong>68.8%</strong><span>Participación nacional</span></article><article class="stat"><small>Energías limpias 2022</small><strong>31.2%</strong><span>Participación nacional</span></article></div>
+<div class="chart-card"><div class="chart-title"><h4>Participación por tecnología · México 2022</h4><span class="source-tag">NACIONAL</span></div><div id="nationalMix" class="bar-chart"></div><p class="caption">Porcentajes publicados en PRODESEN 2023–2037, capítulo 4, figura 4.9. “Otras limpias” y “otros fósiles” se conservan como categorías agregadas del documento.</p></div>
+<div class="note"><b>Dos conceptos distintos:</b> renovable describe la capacidad de regeneración del recurso; limpia es una categoría definida por la legislación que también puede incluir tecnologías no renovables, como la nuclear.</div><div class="chart-card"><div class="chart-title"><h4>Generación neta de CFE · 2022–2024</h4><span class="source-tag">SOLO CFE</span></div><div id="cfeGeneration" class="bar-chart"></div><p class="caption">Generación neta reportada por CFE para los años indicados.</p></div>
+
+</div>
+<div class="tab-panel" id="tab-compara">
+<div class="subhead"><div><h3>4. Comparador energético</h3><p>Selecciona dos o más opciones para comparar sus características cualitativas.</p></div></div>
+<div class="compare-controls"><label for="compareA">Recurso A</label><select id="compareA"><option value="gas">Gas natural</option><option value="carbon">Carbón</option><option value="uranio">Uranio</option><option value="solar">Radiación solar</option><option value="viento">Viento</option><option value="agua">Agua</option><option value="geotermia">Calor geotérmico</option><option value="biomasa">Biomasa/biogás</option></select><label for="compareB">Recurso B</label><select id="compareB"><option value="solar">Radiación solar</option><option value="gas">Gas natural</option><option value="carbon">Carbón</option><option value="uranio">Uranio</option><option value="viento">Viento</option><option value="agua">Agua</option><option value="geotermia">Calor geotérmico</option><option value="biomasa">Biomasa/biogás</option></select><button class="btn primary" id="compareBtn">Comparar</button></div>
+<div id="compareResult" class="compare-result"></div>
+
+</div>
+<div class="tab-panel" id="tab-reflexiona">
+<div class="subhead"><div><h3>5. Actividad de reflexión</h3><p>Interpreta datos y relaciones. Selecciona una respuesta y comprueba tu razonamiento.</p></div></div>
+<div id="reflectionQuiz" class="reflection-quiz"></div><div id="reflectionResult" aria-live="polite"></div>
+</div>
+<div class="module-footer"><span>FUENTES BASE: PRODESEN 2023–2037, CAP. 4; INFORMES ANUALES CFE 2022–2024.</span><a href="#m1">Continuar al módulo 1 →</a></div>
+</div></section>
+
+<section class="section" id="m1"><div class="container">
+<div class="module-head"><div><span class="kicker">MÓDULO 1</span><h2>Generación eléctrica</h2></div><p>La generación convierte energía primaria en electricidad. Consulta centrales reales con ubicación referencial y capacidades publicadas cuando están disponibles.</p></div>
+<div class="stats-grid"><article class="stat"><small>Generación neta CFE 2022</small><strong>137,133.0 <i>GWh</i></strong><span>Informe Anual CFE</span></article><article class="stat"><small>Generación neta CFE 2023</small><strong>145,172.1 <i>GWh</i></strong><span>Informe Anual CFE</span></article><article class="stat"><small>Generación neta CFE 2024</small><strong>148,775.4 <i>GWh</i></strong><span>Informe Anual CFE</span></article></div>
+<div class="chart-card"><div class="chart-title"><h4>Evolución de generación neta CFE</h4><span class="source-tag">GWh · CFE</span></div><div id="generationTrend" class="bar-chart"></div><p class="caption">Variación interanual calculada a partir de las cifras: 2023/2022 ≈ +5.9%; 2024/2023 ≈ +2.5%. Cálculos propios sobre datos reportados.</p></div>
+<div class="chart-card"><div class="chart-title"><h4>Participación de energías limpias en generación bruta CFE · 2024</h4><span class="source-tag">SOLO CFE</span></div><div id="cfeCleanSplit" class="bar-chart"></div><p class="caption">CFE reportó 38,982.9 GWh limpios de 154,059 GWh brutos (25.3%). El 74.7% restante se obtiene como complemento aritmético del total de esa tabla; no es la participación nacional.</p></div>
+<div class="chart-card"><div class="chart-title"><h4>Ciclo combinado vs. vapor convencional · CFE Generación I</h4><span class="source-tag">GENERACIÓN NETA · GWh</span></div><div id="techComparison" class="bar-chart"></div><p class="caption">EPS CFE Generación I: 2023–2024. Es una comparación de esa empresa subsidiaria, no de toda la generación nacional ni de toda CFE. Informe Anual CFE 2024, p. 273.</p></div>
+<div class="subhead"><div><h3>Centrales eléctricas en México</h3><p>Explora una selección de centrales y su distribución por región.</p></div><span class="source-tag">MAPA REFERENCIAL</span></div>
+<div class="map-layout"><div id="plantMap" class="plant-map" aria-label="Mapa esquemático de centrales de generación por entidad"></div><div class="plant-panel"><label for="plantFilter">Filtrar por tecnología</label><select id="plantFilter"><option value="all">Todas las tecnologías</option><option value="Hidroeléctrica">Hidroeléctrica</option><option value="Termoeléctrica">Termoeléctrica</option><option value="Nucleoeléctrica">Nucleoeléctrica</option><option value="Geotérmica">Geotérmica</option><option value="Eólica">Eólica</option></select><div id="plantList" class="plant-list"></div></div></div>
+<div id="plantDetail" class="detail-box">Selecciona una central para consultar los datos disponibles.</div>
+
+<div class="subhead"><div><h3>Conceptos de generación</h3><p>Abre cada concepto para conocer su funcionamiento.</p></div></div>
+<div class="accordion">
+<details><summary>Ciclo combinado</summary><p>Combina una turbina de gas con una turbina de vapor. Los gases calientes de escape producen vapor en un generador de recuperación de calor; el vapor acciona una segunda turbina. Suele usar gas natural, aunque el combustible depende del diseño y autorización de cada unidad.</p></details>
+<details><summary>Vapor convencional y ciclo Rankine</summary><p>El combustible aporta calor a una caldera, el agua se convierte en vapor y este se expande en una turbina acoplada a un generador. El vapor se condensa y el agua vuelve al ciclo. El ciclo Rankine describe idealmente esta conversión termodinámica.</p></details>
+<details><summary>Hidroeléctrica</summary><p>El agua almacenada o en movimiento transfiere energía hidráulica a una turbina; el eje acciona un generador. La producción depende de disponibilidad hídrica, operación del embalse y condiciones del sistema.</p></details>
+<details><summary>Nucleoeléctrica</summary><p>La fisión de núcleos de uranio libera calor. Ese calor produce vapor que mueve turbinas y generadores. La energía nuclear no es renovable, pero se considera energía limpia bajo la definición jurídica aplicable.</p></details>
+<details><summary>Geotérmica, eólica y fotovoltaica</summary><p>La geotermia aprovecha calor del subsuelo; la eólica convierte energía cinética del viento en rotación; la fotovoltaica transforma radiación solar directamente en corriente continua, que un inversor convierte en corriente alterna.</p></details>
+</div>
+<div class="module-footer"><span>FUENTES: INFORMES ANUALES CFE 2022–2024; DOCUMENTOS CFE DE CENTRALES.</span><a href="#m2">Continuar al módulo 2 →</a></div>
+</div></section>
+
+<section class="section module-section" id="m2"><div class="container">
+<div class="module-head"><div><span class="kicker">MÓDULO 2</span><h2>Transmisión eléctrica</h2></div><p>La transmisión transporta grandes bloques de energía a alta tensión desde las zonas de generación hasta las subestaciones y centros de carga.</p></div>
+<div class="stats-grid"><article class="stat"><small>Líneas de transmisión CFE</small><strong>110,559 <i>km</i></strong><span>Infraestructura reportada, 2023</span></article><article class="stat"><small>Subestaciones de transmisión</small><strong>2,302</strong><span>Informe Anual CFE 2023</span></article><article class="stat"><small>Capacidad de transformación</small><strong>164,992 <i>MVA</i></strong><span>Informe Anual CFE 2023</span></article></div>
+<div class="subhead"><div><h3>Sistemas eléctricos interconectados</h3><p>Representación conceptual de los cuatro sistemas mencionados en la consigna. Las áreas aisladas se muestran separadas.</p></div></div>
+<div class="module-illustration"><img src="assets/hidroelectrica.webp" alt="Líneas de transmisión eléctrica que conectan la generación con las ciudades"><div><b>De las centrales a los centros de consumo</b><span>La red de transmisión transporta grandes bloques de energía a alta tensión.</span></div></div><div class="systems-grid">
+<article class="system-card national"><span class="system-label">SISTEMA PRINCIPAL</span><h3>Sistema Interconectado Nacional</h3><p>Integra la mayor parte del territorio continental y permite intercambios entre regiones conectadas.</p><div class="network-line"><i></i><i></i><i></i><i></i></div></article>
+<article class="system-card"><span class="system-label">SISTEMA SEPARADO</span><h3>Baja California</h3><p>Sistema regional de la península, no conectado sincrónicamente al SIN.</p><div class="network-line"><i></i><i></i></div></article>
+<article class="system-card"><span class="system-label">SISTEMA SEPARADO</span><h3>Baja California Sur</h3><p>Sistema aislado respecto del SIN y del sistema de Baja California.</p><div class="network-line"><i></i><i></i></div></article>
+<article class="system-card"><span class="system-label">SISTEMA REGIONAL</span><h3>Mulegé</h3><p>Sistema aislado en la zona norte de Baja California Sur; no se representa como conectado al SIN.</p><div class="network-line"><i></i></div></article>
+</div>
+
+<div class="subhead"><div><h3>Simulador de transmisión trifásica</h3><p>Modifica potencia, tensión, resistencia equivalente por fase y factor de potencia.</p></div><span class="source-tag">MODELO DIDÁCTICO</span></div>
+<div class="simulator">
+<div class="sim-controls">
+<label>Potencia activa P (MW)<output id="pOut">100 MW</output><input id="power" type="range" min="10" max="1000" step="10" value="100"></label>
+<label>Tensión entre líneas V (kV)<output id="vOut">230 kV</output><input id="voltage" type="range" min="69" max="400" step="1" value="230"></label>
+<label>Resistencia por fase R (Ω)<output id="rOut">2 Ω</output><input id="resistance" type="range" min="0.1" max="10" step="0.1" value="2"></label>
+<label>Factor de potencia cos φ<output id="pfOut">1.00</output><input id="powerFactor" type="range" min="0.7" max="1" step="0.01" value="1"></label>
+</div>
+<div class="sim-results"><div class="result"><small>Corriente de línea</small><strong id="currentResult">251 A</strong></div><div class="result"><small>Pérdidas resistivas</small><strong id="lossResult">0.38 MW</strong></div><div class="result"><small>Pérdidas / potencia</small><strong id="lossPct">0.38%</strong></div><div class="result"><small>Potencia aparente</small><strong id="apparentResult">100 MVA</strong></div></div>
+<div class="formula">I = P / (√3 · V · cos φ) <span>·</span> P<sub>pérdidas</sub> = 3 · I² · R</div>
+<div class="chart-card"><h4>Relación conceptual: tensión y pérdidas</h4><div id="lossBars" class="bar-chart"></div><p class="caption">Se mantiene P, R y cos φ; se compara la pérdida calculada a distintas tensiones. Las pérdidas se reducen al elevar la tensión para la misma potencia transmitida.</p></div>
+</div>
+
+<div class="module-footer"><span>FUENTE: INFORME ANUAL CFE 2023, INFRAESTRUCTURA.</span><a href="#m3">Continuar al módulo 3 →</a></div>
+</div></section>
+
+<section class="section" id="m3"><div class="container">
+<div class="module-head"><div><span class="kicker">MÓDULO 3</span><h2>Distribución eléctrica</h2></div><p>La distribución reduce los niveles de tensión y entrega electricidad a los centros de consumo mediante redes de media y baja tensión.</p></div>
+<div class="stats-grid four-stats"><article class="stat"><small>Redes de media tensión</small><strong>551,465 <i>km</i></strong><span>CFE, 2023, p. 138</span></article><article class="stat"><small>Redes de baja tensión</small><strong>342,741 <i>km</i></strong><span>CFE, 2023, p. 138</span></article><article class="stat"><small>Continuidad promedio (SAIDI)</small><strong>17.788 <i>min</i></strong><span>Por cliente en 2023; CFE, p. 137</span></article><article class="stat"><small>Pérdidas de energía MT+BT</small><strong>12.88%</strong><span>CFE, 2023, p. 137</span></article></div>
+<div class="chart-card"><h4>Longitud de redes reportada por CFE</h4><div id="distributionBars" class="bar-chart"></div><p class="caption">La suma aritmética de media y baja tensión es 894,206 km. No se interpreta como longitud de un único circuito. El Informe Anual CFE 2023 también reporta 2,148 subestaciones de distribución.</p></div>
+<div class="subhead"><div><h3>Distribución territorial del servicio</h3><p>La CFE organiza la atención comercial en 16 divisiones de distribución.</p></div><span class="source-tag">16 DIVISIONES</span></div>
+<div class="division-grid"><div class="division-map">
+<div class="division-visual" role="img" aria-label="Mapa de México con una red ilustrativa de nodos que representa la cobertura nacional de distribución eléctrica; no muestra límites oficiales de las divisiones.">
+<img class="division-map-image" src="assets/mexico-silhouette.svg" alt="">
+<svg class="division-network" viewBox="0 0 700 520" aria-hidden="true">
+<g class="network-lines"><path d="M150 95 L235 150 L330 205 L410 270 L500 315 L585 350"/><path d="M235 150 L190 245 L285 320 L380 365 L500 315"/><path d="M330 205 L390 125 L485 185 L585 350"/><path d="M285 320 L210 395 L380 420 L500 315"/><path d="M410 270 L470 390 L540 430"/></g>
+<g class="network-nodes"><circle cx="150" cy="95" r="9"/><circle cx="205" cy="125" r="8"/><circle cx="235" cy="150" r="9"/><circle cx="330" cy="205" r="9"/><circle cx="390" cy="125" r="8"/><circle cx="485" cy="185" r="8"/><circle cx="190" cy="245" r="8"/><circle cx="285" cy="320" r="9"/><circle cx="410" cy="270" r="8"/><circle cx="500" cy="315" r="9"/><circle cx="585" cy="350" r="8"/><circle cx="210" cy="395" r="8"/><circle cx="380" cy="365" r="8"/><circle cx="380" cy="420" r="8"/><circle cx="470" cy="390" r="8"/><circle cx="540" cy="430" r="8"/></g>
+</svg></div>
+<div class="division-count"><strong>16</strong><span>divisiones de distribución</span></div>
+<small class="division-caption">Red ilustrativa de cobertura nacional; no representa límites geográficos oficiales.</small></div><div class="division-info"><h3>Una red que llega a todo el país</h3><p>La distribución conecta subestaciones, redes de media y baja tensión, y puntos de consumo en hogares, comercios e industrias.</p><p>En 2023, CFE reportó 551,465 km de redes de media tensión y 342,741 km de baja tensión.</p></div></div>
+<div class="subhead"><div><h3>Simulador de transformador ideal</h3><p>Modifica la tensión primaria, la relación de espiras y la potencia aparente.</p></div><span class="source-tag">MODELO DIDÁCTICO</span></div>
+<div class="simulator">
+<div class="sim-controls">
+<label>Tensión primaria Vp (V)<output id="vpOut">13,200 V</output><input id="vp" type="range" min="4160" max="34500" step="100" value="13200"></label>
+<label>Relación Np/Ns<output id="ratioOut">30 : 1</output><input id="ratio" type="range" min="2" max="60" step="1" value="30"></label>
+<label>Potencia aparente S (kVA)<output id="sOut">150 kVA</output><input id="sPower" type="range" min="10" max="1000" step="10" value="150"></label>
+</div>
+<div class="transformer-visual"><div class="coil">((((</div><div class="core">Núcleo<br>magnético</div><div class="coil">))))</div></div>
+<div class="sim-results"><div class="result"><small>Tensión secundaria Vs</small><strong id="vsResult">440 V</strong></div><div class="result"><small>Corriente primaria Ip</small><strong id="ipResult">6.56 A</strong></div><div class="result"><small>Corriente secundaria Is</small><strong id="isResult">340.9 A</strong></div><div class="result"><small>Relación</small><strong id="ratioResult">30 : 1</strong></div></div>
+<div class="formula">Vp / Vs = Np / Ns <span>·</span> Vp · Ip = Vs · Is (transformador ideal, monofásico equivalente)</div>
+</div>
+
+<div class="module-footer"><span>FUENTE: INFORME ANUAL CFE 2023, INFRAESTRUCTURA DE DISTRIBUCIÓN.</span><a href="#m4">Continuar al módulo 4 →</a></div>
+</div></section>
+
+<section class="section module-section" id="m4"><div class="container">
+<div class="module-head"><div><span class="kicker">MÓDULO 4</span><h2>¿Sabías que?</h2></div><p>20 hallazgos para interpretar el sistema eléctrico mexicano: cinco sobre recursos, generación, transmisión y distribución.</p></div>
+<div class="tabs" role="tablist"><button class="tab active" data-fact="todos">Todos (20)</button><button class="tab" data-fact="recursos">Recursos (5)</button><button class="tab" data-fact="generacion">Generación (5)</button><button class="tab" data-fact="transmision">Transmisión (5)</button><button class="tab" data-fact="distribucion">Distribución (5)</button><button class="tab" data-fact="reforma">Reforma 2013</button></div>
+<div id="factsGrid" class="facts-grid"></div>
+<div class="special-reform" id="reforma"><div><span class="kicker">APARTADO ESPECIAL</span><h3>La reforma energética de 2013: ¿cómo cambió el sector eléctrico mexicano?</h3><p>Una lectura histórica que distingue los cambios legales, los objetivos declarados y los resultados observados.</p></div>
+<div class="timeline">
+<article><time>Antes de 2013</time><h4>Modelo previo</h4><p>La CFE era el actor central del servicio público; la participación privada se encontraba limitada a modalidades previstas en el marco anterior.</p></article>
+<article><time>20 diciembre 2013</time><h4>Reforma constitucional</h4><p>Se publicó el decreto de reforma a los artículos 25, 27 y 28 constitucionales en materia energética.</p></article>
+<article><time>11 agosto 2014</time><h4>Leyes secundarias</h4><p>Se expidió la Ley de la Industria Eléctrica y se reorganizó el marco de generación, mercado, operación y regulación.</p></article>
+<article><time>2014–2024</time><h4>Implementación</h4><p>Se desarrollaron el Mercado Eléctrico Mayorista, la separación funcional y nuevas modalidades de participación pública y privada.</p></article>
+<article><time>18 marzo 2025</time><h4>Nuevo marco jurídico</h4><p>Se publicó la Ley del Sector Eléctrico y la Ley de la Empresa Pública del Estado, CFE. La Ley de la Industria Eléctrica de 2014 fue abrogada conforme al nuevo decreto.</p></article>
+</div>
+<div class="note">Actores institucionales relevantes: Poder Ejecutivo Federal durante el gobierno de Enrique Peña Nieto, Congreso de la Unión y legislaturas estatales en el proceso constitucional; SENER, CFE, CENACE, órganos reguladores y empresas participantes durante la implementación. Esta lista identifica instituciones involucradas, no atribuye por sí sola posiciones partidistas ni resultados.</div><div class="reform-columns"><article><h4>Cambios estructurales asociados a 2013–2014</h4><ul><li>Mayor participación privada en generación bajo permisos y reglas del mercado.</li><li>Creación del Mercado Eléctrico Mayorista.</li><li>Separación funcional de actividades y empresas subsidiarias de CFE.</li><li>Fortalecimiento del papel operativo del CENACE.</li><li>Transmisión y distribución permanecieron como áreas estratégicas del Estado.</li></ul></article><article><h4>Lectura del marco 2025</h4><ul><li>Se reconoce a CFE como Empresa Pública del Estado.</li><li>La planeación y control del SEN, así como transmisión y distribución públicas, se enmarcan como áreas estratégicas.</li><li>Se prevén formas de participación de particulares bajo la nueva legislación.</li><li>La ley vigente debe leerse en su texto actualizado, no con reglas de 2014 como si siguieran vigentes.</li></ul></article></div>
+<div class="repercussions"><h4>Cinco indicadores para observar cambios y resultados</h4><div class="repercussion-grid">
+<article><small>1 · ORGANIZACIÓN DEL MERCADO</small><b>MEM</b><p>La legislación secundaria de 2014 estableció el marco del Mercado Eléctrico Mayorista y la participación de distintos agentes.</p></article>
+<article><small>2 · PARTICIPACIÓN DE CFE</small><b>41.1% → 42.3%</b><p>Indicador de participación de generación eléctrica CFE en 2022 y 2024 (42.3%); 41.9% en 2023. Informe Anual CFE 2024, p. 27.</p></article>
+<article><small>3 · ADICIÓN PROGRAMADA DE CAPACIDAD CFE</small><b>760.4 / 767.9 / 321.6 MW</b><p>Valores observados de 2022, 2023 y 2024. Es el indicador de adición programada, no una medición de capacidad total instalada. Informe CFE 2024, p. 27.</p></article>
+<article><small>4 · GENERACIÓN LIMPIA CFE</small><b>38,982.9 GWh</b><p>Generación bruta limpia CFE en 2024, equivalente a 25.3% de su generación bruta en la tabla. Informe CFE 2024, p. 26.</p></article>
+<article><small>5 · INFRAESTRUCTURA CFE</small><b>23 proyectos</b><p>Proyectos de transmisión, transformación y distribución concluidos en 2024: 40 subestaciones, 2,280 MVA y 109.2 km-c de líneas. Informe CFE 2024, p. 193.</p></article>
+</div></div>
+
+</div>
+<div class="module-footer"><span>FUENTES: DOCUMENTOS LEGALES 2013, 2014 Y 2025; INFORMES ANUALES CFE.</span><a href="#inicio">Volver al inicio ↑</a></div>
+</div></section>
+
+<section class="section sources" id="fuentes"><div class="container"><span class="kicker">TRANSPARENCIA Y TRAZABILIDAD</span><h2>Fuentes consultadas</h2>
+<div class="source-list">
+<article><b>PRODESEN 2023–2037, capítulo 4</b><p>Datos nacionales de generación 2022 y participación por tecnología.</p><a href="https://base.energia.gob.mx/PRODESEN2023/Capitulo4.pdf" target="_blank" rel="noopener">Consultar capítulo 4 ↗</a></article>
+<article><b>Informes Anuales CFE 2022, 2023 y 2024</b><p>Generación neta 2022–2024 (CFE 2024, p. 27); generación limpia bruta (CFE 2024, p. 26); infraestructura de transmisión (CFE 2023, p. 120); distribución, pérdidas y continuidad (CFE 2023, pp. 137–138).</p><span>Documentos cargados para el proyecto. Los indicadores CFE no son totales nacionales.</span></article>
+<article><b>Central Nucleoeléctrica Laguna Verde</b><p>Capacidad de 1,608 MW, dos unidades, ubicación en Alto Lucero, Veracruz.</p><a href="https://app.cfe.mx/Normateca/VerDocumento.ashx?id=36270" target="_blank" rel="noopener">Manual de organización CFE ↗</a></article>
+<article><b>Infraestructura hidroeléctrica CFE</b><p>Capacidades publicadas por CFE para centrales y proyectos de modernización hidroeléctrica.</p><a href="https://app.cfe.mx/cdn/2019/Imagenes/Boletines/Publicaciones/Libro%20CFE%2011%20P.pdf" target="_blank" rel="noopener">Publicación CFE ↗</a></article>
+<article><b>PRODESEN histórico, mapas termoeléctricos</b><p>Datos de capacidad efectiva y generación por central para el año de referencia del documento.</p><a href="https://www.cenace.gob.mx/Docs/16_MARCOREGULATORIO/Prodecen/01%202015-2029%20Cap%C3%ADtulos%207%2C%208%20y%20Anexos.pdf" target="_blank" rel="noopener">Consultar mapas y anexos ↗</a></article>
+<article><b>Marco jurídico 2025</b><p>Ley del Sector Eléctrico y disposiciones de reorganización institucional publicadas en el Diario Oficial de la Federación el 18 de marzo de 2025.</p><a href="https://www.dof.gob.mx/" target="_blank" rel="noopener">Diario Oficial de la Federación ↗</a></article>
+<article><b>Emisiones de ciclo de vida · IPCC</b><p>Medianas internacionales de emisiones para tecnologías de generación eléctrica, expresadas en g CO₂e/kWh.</p><a href="https://www.ipcc.ch/site/assets/uploads/2018/02/ipcc_wg3_ar5_chapter7.pdf" target="_blank" rel="noopener">Consultar informe IPCC ↗</a></article>
+<article><b>Mapa base de México</b><p>Silueta nacional utilizada como referencia visual. Archivo de Wikimedia Commons, licencia CC BY-SA 2.5.</p><a href="https://commons.wikimedia.org/wiki/File:Blank_Mexico_map,_no_States.svg" target="_blank" rel="noopener">Consultar mapa y licencia ↗</a></article>
+</div>
+<div class="methodology"><h3>Sobre las cifras y simuladores</h3><ul><li>Las cifras muestran el año y la institución que las reporta.</li><li>Los porcentajes de generación nacional y los indicadores exclusivos de CFE se presentan por separado.</li><li>Las ubicaciones de centrales son aproximadas y sirven como guía visual.</li><li>Los simuladores permiten explorar relaciones eléctricas mediante modelos didácticos.</li></ul></div>
+</div></section>
+</main>
+<footer class="footer"><div class="container foot-inner"><div class="brand"><span class="brand-mark">☀</span><span><b>SolarPro</b><small>ENERGÍA QUE CONECTA</small></span></div><span>Atlas Eléctrico de México · Proyecto académico</span><a href="#inicio">Volver arriba ↑</a></div><p class="container foot-note">Material educativo para explorar los recursos, la generación y el recorrido de la electricidad en México.</p></footer>
+<script src="js/app.js"></script>
+</body></html>
